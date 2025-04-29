@@ -11,11 +11,11 @@ class ZebraController < ApplicationController
     render({:template => "game_templates/square_new_results"})
   end
   def square_root_new
-    @the_num = params.fetch("user_number").to_f
-    @the_result = @the_num ** 0.5
     render({:template => "game_templates/square_root_new"})
   end
   def square_root_new_results
+    @the_num = params.fetch("user_number").to_f
+    @the_result = @the_num ** 0.5
     render({:template => "game_templates/square_root_new_results"})
   end
   def payment_new
